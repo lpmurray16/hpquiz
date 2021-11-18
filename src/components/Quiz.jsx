@@ -8,8 +8,8 @@ const Quiz = () => {
 
     return (
         <div className="wrapper_quiz">
-            This is the quiz
-            <p>{count}</p>
+            <h3>This is the quiz</h3>
+            <p className="count">{count}</p>
             <button onClick={() => setCount(count+1)}>Click Me</button>
         </div>
     );

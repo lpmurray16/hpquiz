@@ -1,8 +1,21 @@
 @import './App', './Quiz';
 
+$primary: rgb(248, 128, 29);
+$secondary: rgb(255, 72, 0);
+
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Sora', sans-serif, Tahoma, Geneva, Verdana; 
+    font-family: 'Sora', sans-serif, Tahoma, Geneva, Verdana;
+    background-color: rgb(255, 251, 231); 
+}
+
+button {
+    background-color: $primary;
+    color: #fff;
+    transition: background-color 300ms ease;
+    &:hover {
+        background-color: $secondary;
+    }
 }
