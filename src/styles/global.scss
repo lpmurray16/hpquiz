@@ -1,21 +1,45 @@
-@import './App', './Quiz';
+@import "./App", "./Quiz";
 
-$primary: rgb(248, 128, 29);
-$secondary: rgb(255, 72, 0);
+$primary: rgb(58, 58, 58);
+$secondary: rgb(243, 224, 114);
 
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Sora', sans-serif, Tahoma, Geneva, Verdana;
-    background-color: rgb(255, 251, 231); 
+    font-family: "Sora", sans-serif, Tahoma, Geneva, Verdana !important;
+    background-color: rgb(139, 37, 37);
+    color: #ffe;
 }
-
-button {
+.inner > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 100%;
+    & .wrap_question {
+        width: 500px;
+        padding: 2vw;
+        background-color: #832424;
+        border-radius: 10px;
+        border: 1px solid #2222223d;
+        box-shadow: 3px 4px 10px #22222275;
+    }
+}
+.bttn_selector {
     background-color: $primary;
     color: #fff;
+    font-size: 0.9em;
     transition: background-color 300ms ease;
+    border: 2px solid $secondary;
+    min-width: 16ch;
+    padding: 1em;
+    border-radius: 10px;
+    outline: none;
+    font-family: "Sora", sans-serif, Tahoma, Geneva, Verdana !important;
+    margin-left: 1em;
     &:hover {
         background-color: $secondary;
+        color: rgba(58, 58, 58, 0.933);
+        cursor: pointer;
     }
 }

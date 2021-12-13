@@ -1,35 +1,17 @@
 h1 {
   text-align: center;
-  -webkit-text-decoration: underline #444;
-          text-decoration: underline #444;
+  -webkit-text-decoration: underline #e6ba2d;
+          text-decoration: underline #e6ba2d;
 }
 
 h2 {
-  color: #444;
+  color: #ffe;
   text-align: center;
-}
-
-.wrapper_quiz {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 1em;
 }
 
 .wrapper_quiz h3 {
   font-weight: 700;
-  color: #222222;
-}
-
-.wrapper_quiz .count {
-  border: 2px solid #000;
-  padding: 4px;
+  color: #ffe;
 }
 
 body {
@@ -37,18 +19,51 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Sora', sans-serif, Tahoma, Geneva, Verdana;
-  background-color: #fffbe7;
+  font-family: "Sora", sans-serif, Tahoma, Geneva, Verdana !important;
+  background-color: #8b2525;
+  color: #ffe;
 }
 
-button {
-  background-color: #f8801d;
+.inner > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 100%;
+}
+
+.inner > div .wrap_question {
+  width: 500px;
+  padding: 2vw;
+  background-color: #832424;
+  border-radius: 10px;
+  border: 1px solid #2222223d;
+  -webkit-box-shadow: 3px 4px 10px #22222275;
+          box-shadow: 3px 4px 10px #22222275;
+}
+
+.bttn_selector {
+  background-color: #3a3a3a;
   color: #fff;
+  font-size: 0.9em;
   -webkit-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
+  border: 2px solid #f3e072;
+  min-width: 16ch;
+  padding: 1em;
+  border-radius: 10px;
+  outline: none;
+  font-family: "Sora", sans-serif, Tahoma, Geneva, Verdana !important;
+  margin-left: 1em;
 }
 
-button:hover {
-  background-color: #ff4800;
+.bttn_selector:hover {
+  background-color: #f3e072;
+  color: rgba(58, 58, 58, 0.933);
+  cursor: pointer;
 }
 /*# sourceMappingURL=global.css.map */
